@@ -1,0 +1,10 @@
+numpy==1.21
+torch==1.8.1
+scipy==1.6.3
+librosa==0.8.1
+matplotlib==3.4.2
+imageio==2.9.0
+tqdm==4.60.0
+torchvision==0.9.1
+imageio-ffmpeg==0.4.3
+configargparse
