@@ -106,7 +106,7 @@ The command-line arguments are described as follows:
   * `--audio_vertices_file_path`: It is a npy file with shape of (N, 3), where N is the number of testing vertices. Each data point represents a coordinate on the object in the form of (x, y, z).
   * `--audio_forces_file_path`: It is a npy file with shape of (N, 3), where N is the number of testing vertices. Each data point represents the force values for the corresponding impact in the form of (F_x, F_y, F_z).
   * `--touch_vertices_file_path`: It is a npy file with shape of (N, 3), where N is the number of testing vertices. Each data point contains a coordinate on the object in the form of (x, y, z).
-  * `--touch_gelinfo_file_path`: It is a npy file with shape of (N, 3), where N is the number of testing vertices. Each data point contains the gel rotation angle and gel displacement in the form of (theta, phi, depth).
+  * `--touch_gelinfo_file_path`: It is a npy file with shape of (N, 3), where N is the number of testing vertices. Each data point contains the gel rotation angle and gel displacement in the form of (theta, phi, depth). theta is in the range of [0, np.radians(15)], phi is in the range of [0, 2pi], and depth is in the range of [0.0005,0.002].
 
 ### ObjectFile with KiloOSF for Real-time Visual Rendering
 To use KiloOSF, please make a copy of [cuda](https://github.com/creiser/kilonerf/tree/master/cuda) in the root directory of this repo and follow the steps in [CUDA extension installation](https://github.com/creiser/kilonerf). Run the following command to render visual appearance of the object from a specified camera viewpoint and lighting direction:
